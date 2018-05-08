@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <!-- static title -->
+  <!-- title>Sampblog</title -->
+
+  <!-- dynamic title - gets it from each page -->
+  <title><%= yield(:title) %></title>
+
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+</head>
+
+<body>
+
+<div id="wrapper"> <!-- BEGIN WRAPPER -->
+
+  <header>
+
+    <%= link_to image_tag("USS_Enterprise_firing_phasers.jpg", :size =>'100x65',   alt: "USS_Enterprise"),
+                {:controller => 'pages', :action => 'home'},
+                {:class => 'websiteLogo'} %>
+
+    <BR>
+
+    <%= link_to 'READIT', {:controller => 'pages', :action => 'home'},
+                {:class => 'websiteTitle'} %>
+
+  </header>
+
+  <nav id="horzNav">
+
+    <p>
+      <%= link_to 'Home', {:controller => 'pages', :action => 'home'} %>
+      <%= link_to 'About', {:controller => 'pages', :action => 'about'} %>
+      <%= link_to 'Directions', {:controller => 'pages', :action => 'directions'} %>
+      <%= link_to 'Articles', {:controller => 'articles', :action => 'index'} %>
+      <%= link_to 'Users', {:controller => 'users', :action => 'index'} %>
+    </p>
+
+  </nav>
+
+  <main id="content">
+
+  <!-- yeild - will output whatever is in the html of the pages -->
+  <%= yield %>
+
+  </main>
+
+</div> <!-- END WRAPPER -->
+
+</body>
+
+</html>

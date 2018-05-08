@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Whenever a link is hovered over	change the color and background */
+a:hover {
+    color: #007ebd;
+    background-color: #FFF;
+}
+
+/* Lets have our body have a specific background color */
+body {
+    background: #5D8AA8;
+}
+
+/* Lets have our wrapper have a specific settings */
+div#wrapper{
+    margin:auto;
+    background:white;
+    width:800px;
+    height:2000px;
+}
+
+/* Lets have our div header have specific settings */
+header {
+    display:block;
+    /* Padding Top, Right, Bottom, Left */
+    padding: 10px 10px 30px 10px;
+}
+
+/* Lets have our CLASS websiteLogo have specific settings */
+.websiteLogo{
+    float:left;
+    text-decoration: none;
+}
+
+/* Lets have our CLASS websiteTitle have specific settings */
+.websiteTitle {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    line-height: 20px;
+    padding-left: 20px;
+}
+
+/* Lets have our ID horzNav have specific settings */
+#horzNav {
+    display:block;
+    /* Padding Top, Right, Bottom, Left */
+    padding: 10px 20px 10px 10px;
+    background: black;
+}
+
+/* Lets have our ID horzNav a have specific settings */
+/* Change the link colors for our navigation links */
+#horzNav a {
+    text-decoration: none;
+    padding: 0px 0px 0px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Lets have our ID horzNav a:hover have specific settings */
+/* Change the background color when hovering for our navigation links */
+#horzNav a:hover {
+    background-color: black;
+    color: #007ebd;
+}
+
+/* Lets have our DIV main have specific settings */
+/* Change the padding around the main content area */
+main {
+    /* Padding Top, Right, Bottom, Left */
+    padding: 10px 20px 20px 20px;
+}
+
+
+
+
+
+
+
