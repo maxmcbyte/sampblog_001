@@ -1,0 +1,57 @@
+2018-05-08T04:07:02.170631+00:00 app[api]: Release v1 created by user maxmcbyte@gmail.com
+2018-05-08T04:07:02.170631+00:00 app[api]: Initial release by user maxmcbyte@gmail.com
+2018-05-08T04:07:02.334149+00:00 app[api]: Enable Logplex by user maxmcbyte@gmail.com
+2018-05-08T04:07:02.334149+00:00 app[api]: Release v2 created by user maxmcbyte@gmail.com
+2018-05-08T04:12:50.000000+00:00 app[api]: Build started by user maxmcbyte@gmail.com
+2018-05-08T04:13:36.347005+00:00 app[api]: Release v3 created by user maxmcbyte@gmail.com
+2018-05-08T04:13:36.347005+00:00 app[api]: Set LANG, RACK_ENV, RAILS_ENV, RAILS_LOG_TO_STDOUT, RAILS_SERVE_STATIC_FILES, SECRET_KEY_BASE config vars by user maxmcbyte@gmail.com
+2018-05-08T04:13:37.253191+00:00 app[api]: Deploy ef405a7a by user maxmcbyte@gmail.com
+2018-05-08T04:13:37.283173+00:00 app[api]: Scaled to console@0:Free rake@0:Free web@1:Free worker@0:Free by user maxmcbyte@gmail.com
+2018-05-08T04:13:37.253191+00:00 app[api]: Release v4 created by user maxmcbyte@gmail.com
+2018-05-08T04:12:50.000000+00:00 app[api]: Build succeeded
+2018-05-08T04:13:43.567370+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 55771 -e production`
+2018-05-08T04:13:50.924312+00:00 app[web.1]: => Booting Puma
+2018-05-08T04:13:50.924330+00:00 app[web.1]: => Rails 5.0.7 application starting in production on http://0.0.0.0:55771
+2018-05-08T04:13:50.924332+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2018-05-08T04:13:50.924334+00:00 app[web.1]: Puma starting in single mode...
+2018-05-08T04:13:50.924342+00:00 app[web.1]: * Version 3.11.4 (ruby 2.3.7-p456), codename: Love Song
+2018-05-08T04:13:50.924344+00:00 app[web.1]: * Min threads: 5, max threads: 5
+2018-05-08T04:13:50.924345+00:00 app[web.1]: * Environment: production
+2018-05-08T04:13:50.924493+00:00 app[web.1]: * Listening on tcp://0.0.0.0:55771
+2018-05-08T04:13:50.924897+00:00 app[web.1]: Use Ctrl-C to stop
+2018-05-08T04:13:51.657490+00:00 heroku[web.1]: State changed from starting to up
+2018-05-08T04:39:35.327341+00:00 heroku[router]: at=info method=GET path="/" host=stark-cliffs-82613.herokuapp.com request_id=80fe0af0-affa-457c-b4f0-3f453a4688fa fwd="172.56.40.84" dyno=web.1 connect=1ms service=53ms status=500 bytes=1827 protocol=https
+2018-05-08T04:39:35.290145+00:00 app[web.1]: I, [2018-05-08T04:39:35.290003 #4]  INFO -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa] Started GET "/" for 172.56.40.84 at 2018-05-08 04:39:35 +0000
+2018-05-08T04:39:35.301206+00:00 app[web.1]: I, [2018-05-08T04:39:35.301012 #4]  INFO -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa] Processing by UsersController#index as HTML
+2018-05-08T04:39:35.321671+00:00 app[web.1]: I, [2018-05-08T04:39:35.321528 #4]  INFO -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa]   Rendering users/index.html.erb within layouts/application
+2018-05-08T04:39:35.326340+00:00 app[web.1]: I, [2018-05-08T04:39:35.326206 #4]  INFO -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa]   Rendered users/index.html.erb within layouts/application (4.2ms)
+2018-05-08T04:39:35.326793+00:00 app[web.1]: I, [2018-05-08T04:39:35.326695 #4]  INFO -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa] Completed 500 Internal Server Error in 25ms
+2018-05-08T04:39:35.328608+00:00 app[web.1]: F, [2018-05-08T04:39:35.328469 #4] FATAL -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa]   
+2018-05-08T04:39:35.328705+00:00 app[web.1]: F, [2018-05-08T04:39:35.328643 #4] FATAL -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa] ActionView::Template::Error (Can't connect to local MySQL server through socket '/home/sorcerersupreme/Projects/Development/server/rubystack-2.4.3-1/mysql/tmp/mysql.sock' (2)):
+2018-05-08T04:39:35.329143+00:00 app[web.1]: F, [2018-05-08T04:39:35.329030 #4] FATAL -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa]     12:   </thead>
+2018-05-08T04:39:35.329146+00:00 app[web.1]: [80fe0af0-affa-457c-b4f0-3f453a4688fa]     13: 
+2018-05-08T04:39:35.329149+00:00 app[web.1]: [80fe0af0-affa-457c-b4f0-3f453a4688fa]     14:   <tbody>
+2018-05-08T04:39:35.329151+00:00 app[web.1]: [80fe0af0-affa-457c-b4f0-3f453a4688fa]     15:     <% @users.each do |user| %>
+2018-05-08T04:39:35.329153+00:00 app[web.1]: [80fe0af0-affa-457c-b4f0-3f453a4688fa]     16:       <tr>
+2018-05-08T04:39:35.329154+00:00 app[web.1]: [80fe0af0-affa-457c-b4f0-3f453a4688fa]     17:         <td><%= user.password %></td>
+2018-05-08T04:39:35.329156+00:00 app[web.1]: [80fe0af0-affa-457c-b4f0-3f453a4688fa]     18:         <td><%= user.email %></td>
+2018-05-08T04:39:35.329307+00:00 app[web.1]: F, [2018-05-08T04:39:35.329180 #4] FATAL -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa]   
+2018-05-08T04:39:35.329398+00:00 app[web.1]: F, [2018-05-08T04:39:35.329340 #4] FATAL -- : [80fe0af0-affa-457c-b4f0-3f453a4688fa] app/views/users/index.html.erb:15:in `_app_views_users_index_html_erb__1178610248146861430_39226140'
+2018-05-08T04:39:35.999611+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stark-cliffs-82613.herokuapp.com request_id=ceb11a09-1cd0-4645-a68f-12ec435b309c fwd="172.56.40.84" dyno=web.1 connect=1ms service=4ms status=200 bytes=143 protocol=https
+2018-05-08T04:40:47.902492+00:00 heroku[router]: at=info method=GET path="/" host=stark-cliffs-82613.herokuapp.com request_id=3c7355ce-8064-49da-ace1-00a97a248f69 fwd="172.56.40.84" dyno=web.1 connect=2ms service=27ms status=500 bytes=1827 protocol=https
+2018-05-08T04:40:47.879711+00:00 app[web.1]: I, [2018-05-08T04:40:47.879575 #4]  INFO -- : [3c7355ce-8064-49da-ace1-00a97a248f69] Started GET "/" for 172.56.40.84 at 2018-05-08 04:40:47 +0000
+2018-05-08T04:40:47.880729+00:00 app[web.1]: I, [2018-05-08T04:40:47.880645 #4]  INFO -- : [3c7355ce-8064-49da-ace1-00a97a248f69] Processing by UsersController#index as HTML
+2018-05-08T04:40:47.882516+00:00 app[web.1]: I, [2018-05-08T04:40:47.882433 #4]  INFO -- : [3c7355ce-8064-49da-ace1-00a97a248f69]   Rendering users/index.html.erb within layouts/application
+2018-05-08T04:40:47.884145+00:00 app[web.1]: I, [2018-05-08T04:40:47.884066 #4]  INFO -- : [3c7355ce-8064-49da-ace1-00a97a248f69]   Rendered users/index.html.erb within layouts/application (1.4ms)
+2018-05-08T04:40:47.895713+00:00 app[web.1]: F, [2018-05-08T04:40:47.895622 #4] FATAL -- : [3c7355ce-8064-49da-ace1-00a97a248f69]   
+2018-05-08T04:40:47.894136+00:00 app[web.1]: I, [2018-05-08T04:40:47.894006 #4]  INFO -- : [3c7355ce-8064-49da-ace1-00a97a248f69] Completed 500 Internal Server Error in 13ms
+2018-05-08T04:40:47.902161+00:00 app[web.1]: F, [2018-05-08T04:40:47.901986 #4] FATAL -- : [3c7355ce-8064-49da-ace1-00a97a248f69] ActionView::Template::Error (Can't connect to local MySQL server through socket '/home/sorcerersupreme/Projects/Development/server/rubystack-2.4.3-1/mysql/tmp/mysql.sock' (2)):
+2018-05-08T04:40:47.902509+00:00 app[web.1]: F, [2018-05-08T04:40:47.902427 #4] FATAL -- : [3c7355ce-8064-49da-ace1-00a97a248f69]     12:   </thead>
+2018-05-08T04:40:47.902512+00:00 app[web.1]: [3c7355ce-8064-49da-ace1-00a97a248f69]     13: 
+2018-05-08T04:40:47.902515+00:00 app[web.1]: [3c7355ce-8064-49da-ace1-00a97a248f69]     14:   <tbody>
+2018-05-08T04:40:47.902517+00:00 app[web.1]: [3c7355ce-8064-49da-ace1-00a97a248f69]     15:     <% @users.each do |user| %>
+2018-05-08T04:40:47.902518+00:00 app[web.1]: [3c7355ce-8064-49da-ace1-00a97a248f69]     16:       <tr>
+2018-05-08T04:40:47.902520+00:00 app[web.1]: [3c7355ce-8064-49da-ace1-00a97a248f69]     17:         <td><%= user.password %></td>
+2018-05-08T04:40:47.902522+00:00 app[web.1]: [3c7355ce-8064-49da-ace1-00a97a248f69]     18:         <td><%= user.email %></td>
+2018-05-08T04:40:47.902617+00:00 app[web.1]: F, [2018-05-08T04:40:47.902547 #4] FATAL -- : [3c7355ce-8064-49da-ace1-00a97a248f69]   
+2018-05-08T04:40:47.902852+00:00 app[web.1]: F, [2018-05-08T04:40:47.902655 #4] FATAL -- : [3c7355ce-8064-49da-ace1-00a97a248f69] app/views/users/index.html.erb:15:in `_app_views_users_index_html_erb__1178610248146861430_39226140'

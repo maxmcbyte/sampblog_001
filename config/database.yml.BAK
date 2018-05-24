@@ -9,29 +9,15 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
-
-# BG.MOD.BEGIN
-# am changing this from mysql to postgresql
-
 default: &default
-  #adapter: mysql2
-  #encoding: utf8
-
-  adapter: postgresql
-  encoding: unicode
-
+  adapter: mysql2
+  encoding: utf8
   pool: 5
-
-  #username: sbadmin
-  #password: password
-
-  username: postgres
-  password: Password1
-
+  username: sbadmin
+  password: password
   host: localhost
-
-  # BG ADD - not needed for postgresql (may have an equivalent though)
-  #socket: /home/sorcerersupreme/Projects/Development/server/rubystack-2.4.3-1/mysql/tmp/mysql.sock
+  # BG ADD
+  socket: /home/sorcerersupreme/Projects/Development/server/rubystack-2.4.3-1/mysql/tmp/mysql.sock
 
 development:
   <<: *default
@@ -66,9 +52,5 @@ test:
 production:
   <<: *default
   database: sampblog_production
-
-  #username: sampblog
-  #password: <%= ENV['SAMPBLOG_DATABASE_PASSWORD'] %>
-
-  username: postgres
-  password: Password1
+  username: sampblog
+  password: <%= ENV['SAMPBLOG_DATABASE_PASSWORD'] %>
