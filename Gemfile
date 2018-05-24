@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # BG MOD.BEGIN - specify Ruby version - Heroku wants it
-ruby "2.2.4"
+ruby "2.4.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.6'
@@ -63,7 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # BG MOD.BEGIN - Heroku (Think this will solve the error)
 group :production do
-  gem 'pg'
+  # gem 'pg' - already specified above
   gem 'rails_12factor'
 end
 
